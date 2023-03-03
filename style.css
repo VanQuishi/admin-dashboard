@@ -4,6 +4,10 @@ body, html {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
 .container{
   height: 100%;
   font-size: 24px;
@@ -24,20 +28,80 @@ body, html {
   color: white;
   display: flex;
   flex-direction: column;
+  row-gap: 50px;
+  padding: 20px 0 0 20px;
 }
 
 .sidebar ul{
   padding: 0;
+  margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 .sidebar ul>li{
   display: flex;
   border: 1px solid red;
-}
-.sidebar ul>li>div{
-  border: 1px solid yellow;
+  padding: 0 0 20px 0;
 }
 
 .icon{
-  width: 50px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid yellow;
+}
+
+.header{
+  padding: 20px 20px 20px 20px;
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header>div:nth-child(1){
+  display: grid;
+  grid-template-columns: 6fr auto;
+}
+
+.searchBarWrap{
+  display: flex;
+  gap: 10px;
+  height: 30%;
+}
+
+.searchBar{
+  border-radius: 20px;
+  width: 50%;
+}
+
+.utilsWrap{
+  display: flex;
+  gap: 10px;
+}
+
+.header>div:nth-child(2){
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.greetingsWrap{
+  display: flex;
+  gap: 10px;
+}
+
+.buttonWrap{
+  display: flex;
+  gap: 30px;
+}
+
+.buttonWrap button{
+  height: 40%;
+  width: 100px;
+  border-radius: 20px;
+  background-color: #1992d4;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
 }
