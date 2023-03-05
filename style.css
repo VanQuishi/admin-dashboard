@@ -105,3 +105,58 @@ h1, h2, h3, h4, h5, h6{
   cursor: pointer;
   border: none;
 }
+
+.mainContent{
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template: auto / 4fr 1fr;
+  padding: 20px 20px 80px 20px;
+  gap: 20px;
+}
+
+.mainContentTitles{
+  margin-bottom: 10px;
+}
+
+.cardWrap{
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 20px;
+  height: 100%;
+}
+
+.card{
+  height: 70%;
+  width: 60%;
+  background-color: white;
+  border-left: 5px solid #f0b429;
+  border-radius: 10px;
+  padding: 20px 10px 20px 10px;
+}
+
+.card, p{
+  font-size: 1rem;
+}
+
+.notiWrap{
+  display: flex;
+  flex-direction: column;
+}
+.notiWrap>div{
+  flex: 1;
+}
+
+.columnCard{
+  background-color: white;
+  padding: 20px 20px 10px 20px;
+  border-radius: 10px;
+}
+.columnCard p{
+  font-size: 0.8rem;
+}
+.columnCard>div:not(:first-child){
+  padding-top: 10px;
+}
+.columnCard>div:not(:last-child){
+  border-bottom: 1px solid #e2e8f0;
+}
